@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import st from "./style/Home.module.css";
 import Link from "next/link";
+import Footer from "@/components/footer/page";
 export default function Home() {
   return (
     <main>
@@ -9,6 +10,7 @@ export default function Home() {
         <Link href="/teacher" className={st.btn}>Teacher Portal</Link>
         <Link href="/student" className={st.btn}>Student Portal</Link>
       </div>
+      <Footer/>
     </main>
   );
 }

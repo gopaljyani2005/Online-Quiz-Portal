@@ -1,0 +1,8 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding-top: calc(80px + 10px); /* Header height + 10px gap */
+  }
+
+  .login{
+    display: block;
+  }

@@ -8,6 +8,8 @@ export default function createquiz(){
     const [QuizTitle,setQuizTitle] = useState("");
     const [Domains,setDomains] = useState("");
     const [Marks , setMarks] = useState("");
+    const [StartTime, setStartTime] = useState("");
+    const [EndTime,setEndTime] = useState("");
     
     async function createquiz(e){
         e.preventDefault();
@@ -21,7 +23,9 @@ export default function createquiz(){
             TeacherID:TeacherID,
             QuizTitle:QuizTitle,
             Domains:Domains,
-            Marks:Marks
+            Marks:Marks,
+            StartTime:StartTime,
+            EndTime:EndTime
           }
 
           const resp = await fetch(`/api/addquiz`,{
@@ -79,6 +83,28 @@ export default function createquiz(){
                     required
                     value={Marks}
                     onChange={(e) => setMarks(e.target.value)}
+                />
+
+                <label htmlFor="StartTime">StartTime</label>
+                <input
+                    type="datetime-local"
+                    id="StartTime"
+                    name="StartTime"
+                    placeholder="StartTime"
+                    required
+                    value={StartTime}
+                    onChange={(e) => setStartTime(e.target.value)}
+                />
+
+                <label htmlFor="EndTime">EndTime</label>
+                <input
+                    type="datetime-local"
+                    id="EndTime"
+                    name="EndTime"
+                    placeholder="EndTime"
+                    required
+                    value={EndTime}
+                    onChange={(e) => setEndTime(e.target.value)}
                 />
                 <button type="submit">Create</button>
             </form>

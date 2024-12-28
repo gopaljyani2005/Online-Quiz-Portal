@@ -1,0 +1,31 @@
+/* Ensure the footer stretches across the screen and stays at the bottom */
+.footer {
+    background-color: #1e3d58;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 325px;
+    height: 10%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Styling for footer links */
+.footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+/* Hover effect for links */
+.footer a:hover {
+    color: #ffb74d;
+}
+
+/* Ensure the footer content has spacing and is vertically aligned */
+.footer div {
+    margin-top: 10px;
+}
+
