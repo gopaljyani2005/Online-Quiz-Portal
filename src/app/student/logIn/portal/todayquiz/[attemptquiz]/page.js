@@ -33,7 +33,6 @@ export default function start({ params }) {
       studentID:result.studentID,
       Start:1,
     }
-    console.log(submissiondata);
     const submissionResponse = await fetch(`/api/quizSubmission`,{
       method:"POST",
       headers:{
@@ -54,10 +53,14 @@ export default function start({ params }) {
       setSubmissionID(subid);
       let QuizPaper = await fetch(`/api/getQuizByID/${quizid}`);
       QuizPaper = await QuizPaper.json();
-      setQuizQuestionPaper(QuizPaper);
+      if(QuizPaper.length ===0){
+        alert("paper is not created");
+        router.push(`/student/logIn/portal/todayquiz`);
+      }
+      else{setQuizQuestionPaper(QuizPaper);
       setpaperkey(Object.keys(QuizPaper));
       setsection1(false);
-      setsection2(true);
+      setsection2(true);}
     }
   }
   async function handleNext(QuestionID) {
@@ -106,7 +109,7 @@ export default function start({ params }) {
         </div>
       )}
 
-      {!section1 && (
+      { !section1 && (
         <div className={styles1.quizContent}>
           <h2>Welcome to the Quiz!</h2>
           {/* Add your quiz questions here */}

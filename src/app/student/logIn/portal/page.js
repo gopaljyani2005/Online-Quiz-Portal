@@ -8,14 +8,8 @@ export default function studentPortal() {
   function createquiz(){
     router.push(`/student/logIn/portal/todayquiz`);
   }
-  function funct2(){
-    console.log("inside the function 2");
-  }
-  function createquestion(){
-    console.log("inside the function 3");
-  }
-  function funct4(){
-    console.log("inside the function 4");
+  function quiz(){
+    router.push(`/student/logIn/portal/studentQuiz`);
   }
   
   
@@ -23,9 +17,7 @@ export default function studentPortal() {
     <main className={styles.adminpage}>
                 <div className={styles.btn}>
                 <button onClick={createquiz}>Today Quiz</button>
-                <button onClick={funct2}>update</button>
-                <button onClick={createquestion}>Create New Question</button>
-                <button onClick={funct4}>delete</button>
+                <button onClick={quiz}>Quizes</button>
             </div>
                 
             

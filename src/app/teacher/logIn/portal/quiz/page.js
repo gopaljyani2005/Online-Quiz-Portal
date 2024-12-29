@@ -32,10 +32,10 @@ export default function createquestion(request) {
   }
   return (
     <main className={styles.main}>
-      <h1>create new question </h1>
+      <h1>Quiz Portal</h1>
       <div className={styles.linkContainer}>
           {Object.keys(quiz).map((key) => (
-            <Link href={`/teacher/logIn/portal/createquestion/${quiz[key].QuizID}`} key={key}>{quiz[key].QuizTitle}</Link>
+            <Link href={`/teacher/logIn/portal/quiz/${quiz[key].QuizID}`} key={key}>{quiz[key].QuizTitle}</Link>
           ))}
         </div>
     </main>

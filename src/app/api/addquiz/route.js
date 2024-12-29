@@ -8,7 +8,7 @@ export async function POST(request){
         const data = await request.json();
         const TeacherID = data.TeacherID;
         const QuizTitle = data.QuizTitle;
-        const Domains = [data.Domains];
+        const Domains = data.Domains;
         const Marks = data.Marks;
         const StartTime = data.StartTime;
         const EndTime = data.EndTime;
