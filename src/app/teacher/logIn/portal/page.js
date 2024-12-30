@@ -11,6 +11,10 @@ export default function teacherPortal() {
   function funct4(){
     router.push(`/teacher/logIn/portal/quiz`);
   }
+
+  function deleteQuiz(){
+    router.push(`/teacher/logIn/portal/deletequiz`);
+  }
   
   
   return (
@@ -18,6 +22,7 @@ export default function teacherPortal() {
                 <div className={styles.btn}>
                 <button onClick={createquiz}>Create New Quiz</button>
                 <button onClick={funct4}>Quizes</button>
+                <button onClick={deleteQuiz}>Delete Quiz</button>
             </div>
                 
             

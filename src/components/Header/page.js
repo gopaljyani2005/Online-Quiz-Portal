@@ -61,6 +61,10 @@ const styles = {
     width: '100px',
     height: '100px',
   },
+  main: {
+    marginTop: '10vh', // Ensures content starts below the fixed header
+    padding: '20px', // Optional additional padding for content
+  },
   
 };
 
