@@ -1,0 +1,112 @@
+/* Main Page Layout */
+.main {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb; /* Softer background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 120px;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  .header {
+    width: 100%;
+    background-color: #2196F3; /* Bright blue */
+    color: white;
+    padding: 30px 0; /* Increased padding for more space */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  }
+  
+  .header h1 {
+    font-size: 40px; /* Larger font size for prominence */
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Added letter-spacing for style */
+  }
+  
+  /* Main Content Container */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  
+  /* Individual Feature Section */
+  .feature {
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Deeper shadow for better contrast */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Added smooth transitions for hover */
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  .feature h2 {
+    font-size: 32px;
+    color: #2196F3;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .feature p {
+    font-size: 18px; /* Increased font size for better readability */
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .feature ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .feature li {
+    font-size: 16px;
+    margin-bottom: 12px; /* Increased spacing for readability */
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .feature li::before {
+    content: '✔'; /* Added checkmark before each list item */
+    color: #2196F3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 30px; /* Adjusted font size on small screens */
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+  
+    .feature {
+      padding: 20px; /* Reduced padding for smaller screens */
+    }
+  }
+  

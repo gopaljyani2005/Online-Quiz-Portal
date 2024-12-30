@@ -65,6 +65,9 @@ export default function LoginPage() {
                 />
                 <button type="submit">Login</button>
             </form>
+            <div className="forgot-password">
+                <Link href="/teacher/logIn/forgotpassword">Forgot Password</Link>
+            </div>
         </main>
     );
 }
