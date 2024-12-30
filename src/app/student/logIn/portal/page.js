@@ -12,7 +12,6 @@ export default function studentPortal() {
     router.push(`/student/logIn/portal/studentQuiz`);
   }
   
-  
   return (
     <main className={styles.adminpage}>
                 <div className={styles.btn}>

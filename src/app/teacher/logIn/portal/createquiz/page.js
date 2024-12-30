@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "../../../../style/Form.module.css";
+import styles from "../../../../style/quizForm.module.css";
 import { useRouter } from "next/navigation";
 
 export default function CreateQuiz() {

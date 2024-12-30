@@ -55,6 +55,7 @@ export default function forgotpassword(){
             router.push(`/teacher/logIn/forgotpassword/resetpassword?Username=${encodedUsername}`);
         }
         else{
+            console.log("hiii",sendotp);
             alert("incorrect otp! Please enter correct otp");
             setotp("");
         }

@@ -3,19 +3,17 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-const StudentPortalHeader = () => {
+const TeacherPortalHeader = () => {
   const router = useRouter();
   const [showProfileDropdown, setShowProfileDropdown] = useState(false);
   const [Username,setUsername] = useState("");
   const [Email,setEmail] = useState("");
-  const [Department,setDepartment] = useState("");
   const toggleDropdown = async() => {
-    const response = await fetch(`/api/cookiedata/studenttoken`, {
+    const response = await fetch(`/api/cookiedata/teachertoken`, {
       method: "GET",
       credentials: "same-origin",
     });
     let result = await response.json();
-    setDepartment(result.Department);
     setEmail(result.Email);
     setUsername(result.Username);
     setShowProfileDropdown((prev) => !prev);
@@ -23,7 +21,7 @@ const StudentPortalHeader = () => {
 
   async function logoutfunct(){
     const data = {
-      tokenname:"studenttoken",
+      tokenname:"teachertoken",
     }
     const response = await fetch(`/api/logoutApi`,{
       method:"POST",
@@ -33,7 +31,7 @@ const StudentPortalHeader = () => {
       body:JSON.stringify(data)
     });
     if(response.ok){
-      router.push('/student/logIn');
+      router.push('/teacher/logIn');
     }
   }
   
@@ -53,13 +51,12 @@ const StudentPortalHeader = () => {
           <div style={styles.profileDropdown}>
             <h1>Profile</h1>
             <p>{Username}</p>
-            <p>{Department}</p>
             <p>{Email}</p>
           </div>
         )}
       </div>
       <div>
-        <h1><i></i>Student Portal</h1>
+        <h1><i>Teacher Portal</i></h1>
       </div>
 
       {/* Logout Button */}
@@ -124,4 +121,4 @@ const styles = {
   },
 };
 
-export default StudentPortalHeader;
+export default TeacherPortalHeader;

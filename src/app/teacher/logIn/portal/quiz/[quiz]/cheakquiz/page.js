@@ -27,7 +27,7 @@ export default function quiz({params}){
         <main className={styles.admin}>
             <div className={styles.btn}>
             <h1>Quiz Portal</h1>
-            <button onClick={cheakquiz}>cheak quiz</button>
+            <button onClick={cheakquiz}>check quiz</button>
             <button onClick={sendemail}>sendEmail</button>
             </div>
             {
