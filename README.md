@@ -49,3 +49,49 @@ Ensuring the integrity and fairness of quizzes:
 ---
 
 
+
+
+
+### ⚡ **Installation**
+
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/gopaljyani2005/Online-Quiz-Portal.git
+    cd Online-Quiz-Portal
+    ```
+
+2. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
+
+3. **Set Up Environment Variables**:
+    Create a `.env.local` file:
+    ```bash
+    USER_NAME=YourDBUser
+    PASS_WORD=YourDBPassword
+    USER_EMAIL=YourEmail
+    EMAIL_PASSWORD=YourAppPassword
+    JWT_SECRET_KEY = BXXMEXX
+    ```
+
+4. **Run the Project Locally**:
+    ```bash
+    npm run dev
+    ```
+
+---
+
+
+
+
+
+### 📧 **Contact Information**
+
+If you have any questions or need further assistance, feel free to reach out:
+
+- **Email**: [jyanigopalaram@gmail.com](mailto:jyanigopalaram@gmail.com)
+- **LinkedIn**: [Gopala Ram Jyani](https://www.linkedin.com/in/gopala-ram-jyani-1734b4274/)
+- **GitHub**: [Gopaljyani2005](https://github.com/gopaljyani2005/)
+
+---
