@@ -125,3 +125,8 @@ If you have any questions or need further assistance, feel free to reach out:
 - **GitHub**: [Gopaljyani2005](https://github.com/gopaljyani2005/)
 
 ---
+<div align="center">
+  <h2>MYSQL DATABASE</h2>
+    <img src="https://github.com/gopaljyani2005/Online-Quiz-Portal/blob/main/public/image/erd.png" alt="Admin Login Screenshot" width="1000" heigh="500" style="border: 2px solid #32CD32; border-radius: 10px;">
+</div> 
+---
