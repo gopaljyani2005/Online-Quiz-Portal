@@ -68,11 +68,15 @@ Ensuring the integrity and fairness of quizzes:
 3. **Set Up Environment Variables**:
     Create a `.env.local` file:
     ```bash
-    USER_NAME=YourDBUser
-    PASS_WORD=YourDBPassword
-    USER_EMAIL=YourEmail
-    EMAIL_PASSWORD=YourAppPassword
-    JWT_SECRET_KEY = BXXMEXX
+    DB_HOST=localhost
+    DB_USER = root
+    DB_PASSWORD=xxxxxxxx
+    DB_NAME=dbname
+    
+    JWT_SECRET_KEY=XXXXXXXX
+    
+    USER_EMAIL=123@gmail.com
+    EMAIL_PASSWORD=app password
     ```
 
 4. **Run the Project Locally**:
@@ -82,7 +86,33 @@ Ensuring the integrity and fairness of quizzes:
 
 ---
 
+### 📂 **Routes to Implement**
 
+| **METHOD** | **ROUTE**                  | **FUNCTIONALITY**                               | **ACCESS**               |
+|------------|-------------------------------|----------------------------------------------|--------------------------|
+| POST       | `/api/teacherSigin/`          | Create a new account of teacher              | Teacher            |
+| POST       | `/api/studentSigin/`          | Create a new account of student              | Student            |
+| POST       | `/api/teacherLogin/`          | Create a new account of teacher              | Teacher            |
+| POST       | `/api/studentLogin/`          | Create a new account of student              | Student            |
+| POST       | `/api/addquiz/`               | create a new quiz                            | Teacher            |
+| POST       | `/api/question/`              | create a new question inside quiz            | Teacher            |
+| GET        | `/api/cookiedata/`            | Get cookie data from backend                 | Teacher and Studnet|         
+| GET        | `/api/quizSubmission/`        | cheak submission of quiz                     | Student            |      
+| POST       | `/api/submitResponse/`        | submit today quiz response                   | Student            |   
+| POST       | `/api/submitResponse/`        | submit today quiz response                   | Student            |   
+| GET        | `/api/cheakQuiz/[quiz]`       |  cheak quiz and get all student marks        | Teacher            |   
+| GET        | `/api/cheakQuiz/[quiz]`       |  cheak quiz and get all student marks        | Teacher            |   
+| POST       | `/api/sendEmail/`             |  After checking quiz send marks by mail      | Teacher            |   
+| GET        | `/api/getAnswerSheet/`        |  After checking quiz get response sheet      | Student            |   
+| POST       | `/api/logoutApi/`             |  Loggout User and Teacher both               | Teacher and Student|   
+| DELETE     | `/api/addquiz[quiz]/`         |  Delete Quiz Data                            | Teacher            |   
+| PUT        | `/api/passwordUpdate/`        |  Update password api                         | Teacher and student|   
+| POST       | `/api/sendOtp/`               |  Otp verification api                        | Teacher and student|   
+
+
+
+
+---
 
 
 
