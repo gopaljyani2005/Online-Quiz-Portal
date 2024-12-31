@@ -42,8 +42,8 @@ Ensuring the integrity and fairness of quizzes:
 
 ### 💻 **Tech Stack**
 
-- 🌐 **Frontend**: HTML, CSS, JavaScript, Next.js, Redux
-- ⚙️ **Backend**: Next.js, AWS
+- 🌐 **Frontend**: HTML, CSS, JavaScript, Next.js,
+- ⚙️ **Backend**: Next.js, SQL ,MySQL
 - 🚀 **Deployment**: Vercel, AWS
 
 ---
@@ -114,7 +114,46 @@ Ensuring the integrity and fairness of quizzes:
 
 ---
 
+<div align="center">
+  <h2>MYSQL DATABASE</h2>
+  <img src="https://github.com/gopaljyani2005/Online-Quiz-Portal/blob/main/public/image/erd.png" 
+       alt="Admin Login Screenshot" 
+       width="1000" 
+       height="500" 
+       style="border: 2px solid #32CD32; border-radius: 10px;">
+</div>
 
+
+---
+
+
+
+###  🤝Contribution
+1. **Fork the Repository**  
+   Click the "Fork" button at the top right of this repository to create a copy in your GitHub account.
+
+2. **Clone Fork**  
+   ```bash
+   https://github.com/gopaljyani2005/Online-Quiz-Portal.git
+   ```
+ 3. **Create a Branch**  
+   Create a new branch for your feature or bug fix:
+   ```bash
+   git checkout -b feature-name
+   ```   
+ 4. **Make Changes**  
+   Implement your feature, fix the bug, or improve the documentation. Once you're done, stage and commit your changes:
+   ```bash
+   git add .
+   git commit -m "Description of your changes"
+   ```
+
+5. **Push Your Changes**
+```bash
+git push origin feature-name
+```
+
+ ----  
 
 ### 📧 **Contact Information**
 
@@ -125,8 +164,4 @@ If you have any questions or need further assistance, feel free to reach out:
 - **GitHub**: [Gopaljyani2005](https://github.com/gopaljyani2005/)
 
 ---
-<div align="center">
-  <h2>MYSQL DATABASE</h2>
-    <img src="https://github.com/gopaljyani2005/Online-Quiz-Portal/blob/main/public/image/erd.png" alt="Admin Login Screenshot" width="1000" heigh="500" style="border: 2px solid #32CD32; border-radius: 10px;">
-</div> 
----
+
