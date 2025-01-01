@@ -1,5 +1,5 @@
 <div align="center">
-  <h2> 🌟 Online Quiz Portal 🌟</h2>
+  <h2> 🌟 Online Quiz Portal  🌟</h2>
 </div>
 
 ## A Web-Based **Online Quiz Portal** for **Teachers** and **Students**
